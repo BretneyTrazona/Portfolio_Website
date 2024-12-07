@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Below Div</title>
+    <style>
+       .biiga{
+        background: linear-gradient(45deg, black, transparent);
+    height: 100dvh;
+    display: flex
+;
+       }
+       .biiga img{
+        position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: auto;
+    pointer-events: none;}
+    </style>
+</head>
+<body>
+
+<section class="biiga">
+    
+    <img src="flower2.png" class = "flower2">
+    <img src="flowers.png" class="flower1">
+</section>
+<div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore ab saepe porro autem officiis mollitia deserunt libero nemo, voluptatum possimus, adipisci at obcaecati ipsum facere ea minus ratione dignissimos?</div>
+
+
+<script>
+const flower1 = document.querySelector('.flower1')
+const flower2 = document.querySelector('.flower2')
+
+
+document.addEventListener('scroll',function(){
+let value = window.scrollY
+
+flower1.style.marginRight = value + 'px'
+flower2.style.marginLeft = -value + 'px'
+
+})
+</script>
+</body>
+</html>
