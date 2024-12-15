@@ -1,10 +1,12 @@
 
+/* Global reset: Ensures all elements have no margin/padding and box-sizing is consistent */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Container for aligning the sections */
 .container {
     height: 554px;
     display: flex;
@@ -14,30 +16,39 @@
     align-content: stretch;
     flex-wrap: nowrap;
     flex-direction: column;
-  }
-  .about-us{
+}
+
+/* About us section styling */
+.about-us{
     position: relative;
     bottom: 125%;
     font-size: 115px;
     font-family: georgia, serif;
     color: #E76417;
-  }
-  .left-img {
+}
+
+/* Styling for the left image section */
+.left-img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-between;
-  }
-  .Parallax{
+}
+
+/* Parallax effect container */
+.Parallax{
     display: flex;
     height: 100dvh;
     position: relative;
     overflow: hidden;
-  }
-  
-  .right-text {
+}
+
+/* Right section text styling */
+.right-text {
     margin-left: 20px;  /* Optional: Add space between the image and the paragraph */
-  }
+}
+
+/* Basic body styles */
 body {
     font-family: 'Arial', sans-serif;
     color: #5a5a5a;
@@ -45,6 +56,8 @@ body {
     background: #fff;
     scroll-behavior: smooth;
 }
+
+/* Right section styling */
 .right{
     position: absolute;
     width: 30%;
@@ -55,18 +68,16 @@ body {
     right: 1px;
     background-repeat: no-repeat;
     color: white;
-    display: flex
-;
-padding-top: 90px;
+    display: flex;
+    padding-top: 90px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* top: 70px; */
     align-content: stretch;
 }
 
-
+/* Navbar styling */
 .navbar {
     display: flex;
     justify-content: flex-start;
@@ -78,6 +89,7 @@ padding-top: 90px;
     z-index: 1000;
 }
 
+/* Logo circle styling */
 .logo-circle {
     width: 40px;
     height: 40px;
@@ -85,11 +97,13 @@ padding-top: 90px;
     border-radius: 50%;
 }
 
+/* Navigation links */
 .nav-links {
     margin-left: 20px;
     display: flex;
 }
 
+/* Navigation link styles */
 .nav-links a {
     text-decoration: none;
     margin: 0 15px;
@@ -98,10 +112,12 @@ padding-top: 90px;
     transition: color 0.3s ease;
 }
 
+/* Hover effect for navigation links */
 .nav-links a:hover {
     color: #f38c57;
 }
 
+/* Hamburger menu styling */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -111,6 +127,7 @@ padding-top: 90px;
     color: #f4f4f4;
 }
 
+/* Active state for mobile nav links */
 .nav-links.active {
     display: flex;
     flex-direction: column;
@@ -123,7 +140,7 @@ padding-top: 90px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Hero section styling */
 .hero-section {
     display: flex;
     align-items: center;
@@ -137,6 +154,7 @@ padding-top: 90px;
     color: #B62300;
 }
 
+/* Dark overlay on the hero section */
 .hero-section::before {
     content: '';
     position: absolute;
@@ -148,6 +166,7 @@ padding-top: 90px;
     z-index: 1;
 }
 
+/* Text inside the hero section */
 .hero-text {
     position: relative;
     z-index: 2;
@@ -155,37 +174,34 @@ padding-top: 90px;
     padding: 20px;
     color: #fff;
 }
+
+/* Motto styling in the hero section */
 .motto{
     font-size: 40px;
     font-family:'Georgia', serif;
     color: #BF4304;
     text-align: left;
 }
-.about{    display: flex
-    ;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        height: 900px;
-        overflow: hidden
-        ;
-        }
-   
-   
 
-.BGimg{
+/* About section container */
+.about{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    overflow: hidden;
+}
 
-    /* flex-direction: column-reverse; */
-    align-content: flex-end;
-    /* justify-content: center; */
-    /* align-items: stretch; */
+/* Background image styling for About section */
+.BGimg {
     width: 100%;
     height: 900px;
 }
 
-.button{
+/* Button styling */
+.button {
     display: block;
-    size: 114px;
     font-family: revert;
     font-size: 20px;
     height: 55px;
@@ -195,12 +211,15 @@ padding-top: 90px;
     border: 0px;
     background: #E76417;
 }
+
+/* Hero text paragraph styling */
 .hero-text p {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
+/* Button styling for booking */
 .btn-book {
     background: #f38c57;
     color: #fff;
@@ -212,12 +231,13 @@ padding-top: 90px;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect for booking button */
 .btn-book:hover {
     background: #d17347;
     transform: scale(1.1);
 }
 
-
+/* About section header */
 .about-section h2 {
     width: 100%;
     text-align: center;
@@ -225,12 +245,11 @@ padding-top: 90px;
     color: #f38c57;
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    
 }
 
+/* Content inside the about section */
 .about-content {
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -239,6 +258,7 @@ padding-top: 90px;
     top: -79%;
 }
 
+/* Profile picture in the about section */
 .profile-picture {
     flex: 1;
     max-width: 500px;
@@ -250,19 +270,26 @@ padding-top: 90px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
-.flower1{    position: absolute;
-    bottom: 0;
-    height: 600px;
-    width: auto;
-    pointer-events: none;}
-.flower2{
+
+/* Flower 1 decoration */
+.flower1 {
     position: absolute;
     bottom: 0;
     height: 600px;
     width: auto;
-    pointer-events: none;}
-   
+    pointer-events: none;
+}
 
+/* Flower 2 decoration */
+.flower2 {
+    position: absolute;
+    bottom: 0;
+    height: 600px;
+    width: auto;
+    pointer-events: none;
+}
+
+/* About text styling */
 .about-text {
     flex: 2;
     padding: 125px;
@@ -275,11 +302,7 @@ padding-top: 90px;
     padding-left: 10px;
 }
 
-.about-text p {
-    margin: 0;
-}
-
-
+/* Fade-in animation class */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -291,7 +314,7 @@ padding-top: 90px;
     transform: translateY(0);
 }
 
-
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -300,53 +323,55 @@ padding-top: 90px;
     .hamburger {
         display: block;
     }
+}
 
+/* About section styling with gradient */
+.aboutt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #0D0201, #B62300);
+    height: 864px;
+    gap: 34px;
+    padding-top: 83px;
 }
-.aboutt{
-    display: flex
-    ;
-        flex-direction: column;
-        align-items: center;
-        background: linear-gradient(to bottom, #0D0201, #B62300);
-        height: 864px;
-        gap: 34px;
-        padding-top: 83px;
-}
-.abouttext{position: relative;
+
+/* About text large font */
+.abouttext {
+    position: relative;
     font-size: 115px;
     font-family: georgia, serif;
     color: #E76417;
-
-}
-.meow{
-    display: flex
-    ;
-        /* font-size: 100px; */
-        margin-left: 200px;
-        margin-right: 200px;
-        gap: 20px;
-        height: 269px;
-        align-items: flex-start;
-        flex-direction: row;    
 }
 
-  
-    .profile-picture {
-         
+/* Meow section styling */
+.meow {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 20px;
+    height: 269px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+/* Profile picture height adjustment */
+.profile-picture {
     height: 180px;
-    
     margin-bottom: 4px;
-    }
+}
 
-    .about-text {
-        padding: 10px;
-    }
+/* About text padding adjustment */
+.about-text {
+    padding: 10px;
+}
 
+/* Anchor link styling */
+a {
+    color: #E76417;
+}
 
-
-    a{
-            color: #E76417;
-    }
+/* Services section styling */
 .services-section {
     padding: 60px 20px;
     background: #B62300;
@@ -358,14 +383,15 @@ padding-top: 90px;
     position: relative;
 }
 
+/* Header for services section */
 .services-section h2 {
     font-size: 50px;
     color: white;
     margin-bottom: 30px;
     font-family: Georgia, serif;
-
 }
 
+/* Services wrapper styling */
 .services-wrapper {
     display: flex;
     gap: 20px;
@@ -374,6 +400,7 @@ padding-top: 90px;
     scroll-snap-type: x mandatory;
 }
 
+/* Service card styling */
 .service-card {
     flex: 0 0 auto;
     width: 300px;
@@ -385,36 +412,41 @@ padding-top: 90px;
     scroll-snap-align: start;
 }
 
+/* Service card image */
 .service-card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
+/* Service card title */
 .service-card h3 {
     font-size: 20px;
     color: #f38c57;
     margin-bottom: 10px;
 }
 
+/* Service card text */
 .service-card p {
     font-size: 16px;
     color: #5a5a5a;
 }
 
-
+/* Contact section styling */
 .contact-section {
     padding: 60px 20px;
     background: linear-gradient(to right, #fff8f5, #ffe6d8);
     text-align: center;
 }
 
+/* Contact section header */
 .contact-section h2 {
     font-size: 36px;
     color: #f38c57;
     margin-bottom: 30px;
 }
 
+/* Contact container layout */
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -424,6 +456,7 @@ padding-top: 90px;
     margin: 0 auto;
 }
 
+/* Contact info styling */
 .contact-info {
     flex: 1;
     font-size: 18px;
@@ -431,6 +464,7 @@ padding-top: 90px;
     line-height: 1.8;
 }
 
+/* Contact form styling */
 .contact-form {
     flex: 1;
     display: flex;
@@ -438,6 +472,7 @@ padding-top: 90px;
     gap: 10px;
 }
 
+/* Contact form input fields */
 .contact-form input,
 .contact-form textarea {
     padding: 10px;
@@ -447,6 +482,7 @@ padding-top: 90px;
     width: 100%;
 }
 
+/* Contact form button styling */
 .contact-form button {
     background: #f38c57;
     color: #fff;
@@ -457,6 +493,88 @@ padding-top: 90px;
     cursor: pointer;
 }
 
+/* Hover effect for contact form button */
 .contact-form button:hover {
     background: #d17347;
+}
+
+/* Testimonials section styling */
+.testimonials-section {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+/* Testimonials section header */
+.testimonials-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #5a5a5a;
+}
+
+/* Testimonials section paragraph */
+.testimonials-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+/* Testimonials container layout */
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for testimonial cards */
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonial avatar styling */
+.testimonial-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Testimonial content text */
+.testimonial-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Client name styling in testimonials */
+.client-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #5a5a5a;
+}
+
+/* Social links in testimonials */
+.social-links a {
+    text-decoration: none;
+    color: #f38c57;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+    color: #d17347;
 }

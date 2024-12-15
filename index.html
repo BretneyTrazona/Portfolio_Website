@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding to UTF-8 for universal character support -->
     <meta charset="UTF-8">
+    <!-- Make the page responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spa Website</title>
+    <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Set the website's favicon -->
     <link rel="icon" href="flower1.svg" type="image/x-icon">
 </head>
 <body>
-<!--  test-->
 
+    <!-- Header section containing the navigation bar -->
     <header class="navbar">
+        <!-- Logo section, contains a circle logo -->
         <div class="logo">
             <div class="logo-circle"></div>
         </div>
+        <!-- Navigation links to different sections of the website -->
         <nav class="nav-links">
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About Me</a>
@@ -24,31 +30,40 @@
     </header>
 
     <main>
+        <!-- Home section with an image and a motto -->
         <div class="container" id="home">
+            <!-- Image on the left side of the screen -->
             <img src="massage pic.jpg" alt="Image" class="left-img">
+            <!-- Content on the right side -->
             <div class="right">
                 <div>
+                    <!-- Display the spa motto -->
                     <p class="motto">"In the stillness of the moment, you find your true balance."</p>
                 </div>
-                 <a href="book-appointment.html">
+                <!-- Button linking to the booking page -->
+                <a href="book-appointment.html">
                     <button class="button">Book Now</button>
-                 </a>
+                </a>
             </div>
         </div>
         
-        <div class ="about" id="about">
+        <!-- About section with a background image and two images -->
+        <div class="about" id="about">
             <img src="background.png" alt="Image" class="BGimg">
             <h2 class="about-us">ABOUT ME</h2>
-            <img src="flower2.png" class = "flower2">
+            <img src="flower2.png" class="flower2">
             <img src="flowers.png" class="flower1">
         </div>
       
+        <!-- Additional About Me section with profile and text -->
         <div class="aboutt fade-in">
             <h2 class="abouttext">ABOUT ME</h2>
             <div class="meow">
+                <!-- Profile picture of the therapist -->
                 <div class="profile-picture">
                     <img src="Tess.jpg" alt="About Us">
                 </div>
+                <!-- About text and introduction -->
                 <div class="about-text">
                     <p>
                         Hello I am Tess! I am a licensed massage therapist with 18 years of experience (11 years in the Philippines and 7 years in the US) 
@@ -59,9 +74,11 @@
             </div>
         </div>
           
+        <!-- Services section listing various massage options -->
         <section id="services" class="services-section">
             <h2>MY SERVICES</h2>
             <div class="services-wrapper">
+                <!-- Service card for each service type -->
                 <div class="service-card">
                     <img src="swedish-massag.jpg" alt="Swedish Massage">
                     <h3>Original Thai Massage</h3>
@@ -73,7 +90,7 @@
                     <p>Release tension and restore balance with deep tissue therapy.</p>
                 </div>
                 <div class="service-card">
-                    <img src="Aro.jpg" alt="Foot massage">
+                    <img src="Aro.jpg" alt="Back Massage">
                     <h3>Royal King Herbal Massage</h3>
                     <p>Enhance your experience with calming and invigorating aromas.</p>
                 </div>
@@ -81,23 +98,73 @@
                     <img src="facial.jpg" alt="Facials">
                     <h3>Hot Lava Stone Massage</h3>
                     <p>Rejuvenate your skin with our refreshing facial treatments.</p>
-                    
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <h2>Customer Reviews</h2>
+            <p>What our customers are saying...</p>
+            <div class="testimonials-container">
+                <!-- Each testimonial card -->
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="Client1.jpg" alt="Lance Jarvis">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"I had the most relaxing massage experience at this spa. The ambiance was perfect, and the staff made sure I felt completely at ease. Highly recommend!"</p>
+                        <p class="client-name">Lance Jarvis</p>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="client2.jpg" alt="Ericka Lynda">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Absolutely amazing service! The massage was just what I needed, and I left feeling rejuvenated. I will definitely be returning for my next session!"</p>
+                        <p class="client-name">Ericka Lynda</p>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="client3.jpg" alt="Neil Wilford">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"I’ve been to many spas, but this one stands out. The therapist’s attention to detail and the calming environment made the whole experience exceptional."</p>
+                        <p class="client-name">Neil Wilford</p>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                    <!-- Additional testimonial cards omitted for brevity -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section with spa location and contact information -->
         <section id="contact" class="contact-section fade-in">
             <h2>Contact Us</h2>
             <div class="contact-container">
                 <div class="contact-info">
                     <p>Barangay Quiot SPA, Cebu City</p>
                     <p>Call Me: +09352342941</p>
-                    <p>Email: Pasagpaspaka@gmail.com</p>
+                    <p>Email: spaquenn@gmail.com</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- External JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
